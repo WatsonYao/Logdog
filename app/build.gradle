@@ -9,10 +9,10 @@ android {
     compileSdkVersion 26
     defaultConfig {
         applicationId "watson.love.mathilda.logdog"
-        minSdkVersion 21
+        minSdkVersion 14
         targetSdkVersion 26
         versionCode 1
-        versionName "1.0"
+        versionName "0.0.2"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {

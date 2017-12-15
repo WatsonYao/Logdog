@@ -3,14 +3,12 @@ apply plugin: 'kotlin-android'
 
 android {
     compileSdkVersion 26
-    resourcePrefix "love_" //资源标识前缀 随意填写
-
 
     defaultConfig {
-        minSdkVersion 21
+        minSdkVersion 14
         targetSdkVersion 26
         versionCode 1
-        versionName "1.0"
+        versionName "0.0.2"
 
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
 

@@ -1,7 +1,7 @@
 package watson.love.mathilda.logdog;
 
-import mathilda.love.watson.logdog_core.Logdog;
-import mathilda.love.watson.logdog_core.LogdogKt;
+import mathilda.love.watson.logdog.core.Logdog;
+import mathilda.love.watson.logdog.core.LogdogKt;
 
 /** Created by Administrator on 12/15 0015. */
 public class JavaTestLog {

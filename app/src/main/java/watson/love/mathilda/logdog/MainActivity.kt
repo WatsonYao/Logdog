@@ -2,7 +2,7 @@ package watson.love.mathilda.logdog
 
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
-import mathilda.love.watson.logdog_core.*
+import mathilda.love.watson.logdog.core.*
 
 class MainActivity : AppCompatActivity() {
 

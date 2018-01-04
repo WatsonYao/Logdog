@@ -1,4 +1,4 @@
-package mathilda.love.watson.logdog_core
+package mathilda.love.watson.logdog.core
 
 /**
  * Created by watsonyao .

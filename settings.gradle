@@ -1,1 +1,1 @@
-include ':app', ':logdog-core'
+include ':app', ':core'

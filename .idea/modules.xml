@@ -3,8 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/core/logdog-core.iml" filepath="$PROJECT_DIR$/core/logdog-core.iml" />
       <module fileurl="file://$PROJECT_DIR$/logdog.iml" filepath="$PROJECT_DIR$/logdog.iml" />
-      <module fileurl="file://$PROJECT_DIR$/logdog-core/logdog-core.iml" filepath="$PROJECT_DIR$/logdog-core/logdog-core.iml" />
     </modules>
   </component>
 </project>

@@ -69,6 +69,7 @@ inline fun getFunName(name: Any): String {
     return "[ ${Thread.currentThread().name}:$traceInfo] - "
 }
 
+
 /**
  *
  */

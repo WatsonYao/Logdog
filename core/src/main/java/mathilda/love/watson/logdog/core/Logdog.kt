@@ -16,42 +16,42 @@ object Logdog {
     /**
      *
      */
-    fun i(msg: Any, className: Any) {
+    inline fun i(msg: Any, className: Any) {
         if (enable) Log.i(tag, getFunName(className) + msg)
     }
 
     /**
      *
      */
-    fun d(msg: Any, className: Any) {
+    inline fun d(msg: Any, className: Any) {
         if (enable) Log.d(tag, getFunName(className) + msg)
     }
 
     /**
      *
      */
-    fun v(msg: Any, className: Any) {
+    inline fun v(msg: Any, className: Any) {
         if (enable) Log.v(tag, getFunName(className) + msg)
     }
 
     /**
      *
      */
-    fun w(msg: Any, className: Any) {
+    inline fun w(msg: Any, className: Any) {
         if (enable) Log.w(tag, getFunName(className) + msg)
     }
 
     /**
      *
      */
-    fun e(msg: Any, className: Any) {
+    inline fun e(msg: Any, className: Any) {
         if (enable) Log.e(tag, getFunName(className) + msg)
     }
 
     /**
      *
      */
-    fun e(exception: Exception, className: Any) {
+    inline fun e(exception: Exception, className: Any) {
         exception.printStackTrace()
         Log.e(tag, getFunName(className), exception)
     }
@@ -60,16 +60,13 @@ object Logdog {
 /**
  *
  */
-private fun getFunName(name: Any): String {
-    val sts = Thread.currentThread().stackTrace ?: return ""
-    sts.filter {
-        !it.isNativeMethod
-                && it.className != Thread::class.java.getName()
-                && it.className == name.javaClass.getName()
-    }.forEach {
-        return " [ ${Thread.currentThread().name}:(${it.fileName}:${it.lineNumber}) ${it.methodName} ] - "
-    }
-    return ""
+inline fun getFunName(name: Any): String {
+    val ste = Throwable().stackTrace[1]
+    var traceInfo = "(" + ste.fileName + ":"
+    traceInfo += ste.lineNumber.toString() + "):"
+    traceInfo += ste.methodName
+//    android.util.Log.i("appTag", traceInfo + traceInfo)
+    return "[ ${Thread.currentThread().name}:$traceInfo] - "
 }
 
 /**
